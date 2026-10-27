@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NOMCHAN BOOKSTORE | ORDER FORM</title>
+    </head>
+    <body bgcolor="#FFF5F8">
+        <header>
+            <table bgcolor="#A8205F" border="0" cellpadding="15" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center">
+                        <font color="#FFFFFF" size="7"><b>NOMCHAN BOOKSTORE</b></font><br/>
+                        <font color="#FFE0A3" size="4">Today a reader, Tomorrow a leader</font>
+                    </td>
+                </tr>
+            </table>
+            <table bgcolor="#FAD1E1" border="0" cellpadding="12" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center">
+                        <nav aria-label="Main navigation">
+                            <a href="index.html">Home</a> |
+                            <a href="index.html#san-pham">Books</a> |
+                            <a href="chi-tiet.html">Detail</a> |
+                            <a href="bang-gia.html">Summary</a> |
+                            <a href="dat-hang.html">Buy now</a>
+                        </nav>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <main>
+            <section>
+                <h1 align="center"><font color="#A8205F">DEMO ORDER FORM</font></h1>
+                <p align="center"><mark>This is a practice form: no real order, payment or stock is handled.</mark></p>
+                <form action="xac-nhan.html" method="get">
+                    <fieldset>
+                        <legend>Customer information</legend>
+                        <p><label for="ten">Full name *</label><br/><input autocomplete="name" id="ten" maxlength="60" minlength="2" name="hoTen" placeholder="Nguyen Van A" required type="text"/></p>
+                        <p><label for="email">Email *</label><br/><input autocomplete="email" id="email" name="email" placeholder="demo@example.com" required type="email"/></p>
+                        <p><label for="phone">Phone (fake number only)</label><br/><input id="phone" name="phone" placeholder="0900000000" type="tel"/></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Book details</legend>
+                        <p><label for="product">Book *</label><br/>
+                        <select id="product" name="maSach" required>
+                            <option value="">-- Choose a book --</option>
+                            <option value="SH01">SH01 - The Mountain is You (69$)</option>
+                            <option value="SH02">SH02 - The Let Them Theory (89$)</option>
+                            <option value="SH03">SH03 - The Subtle Art of Not Giving A Pick (70$)</option>
+                            <option value="SH04">SH04 - Atomic Habits (75$)</option>
+                            <option value="SH05">SH05 - The Four Agreements (48$)</option>
+                            <option value="CB01">CB01 - Dont Laugh Challenge (30$)</option>
+                            <option value="CB02">CB02 - Ten Apples Up On Top (25$)</option>
+                            <option value="CB03">CB03 - The Fantastic Flatulent Fart Brothers Save The World! (35$)</option>
+                            <option value="HF01">HF01 - A Brief History of Humankind (95$)</option>
+                            <option value="HF02">HF02 - The Wager (72$)</option>
+                            <option value="HF03">HF03 - 1776 (65$)</option>
+                            <option value="HF04">HF04 - The Shadow of War (68$)</option>
+                            <option value="RN01">RN01 - It Ends With Us (58$)</option>
+                            <option value="RN02">RN02 - Then She Was Gone (55$)</option>
+                            <option value="RN03">RN03 - Every Summer After (50$)</option>
+                            <option value="RN04">RN04 - One Day in December (52$)</option>
+                            <option value="RN05">RN05 - The Love of My Life (58$)</option>
+                            <option value="RN06">RN06 - The French Illusion (62$)</option>
+                            <option value="SF01">SF01 - Stranded (68$)</option>
+                            <option value="SF02">SF02 - Children of Time (88$)</option>
+                            <option value="SF03">SF03 - Hail Mary (80$)</option>
+                            </select></p>
+                        <p><label for="quantity">Quantity (1-5) *</label><br/><input id="quantity" max="5" min="1" name="soLuong" required step="1" type="number" value="1"/></p>
+                        <fieldset>
+                            <legend>Edition *</legend>
+                            <label><input name="phienBan" required type="radio" value="paperback"/> Paperback</label><br/>
+                            <label><input name="phienBan" type="radio" value="hardcover"/> Hardcover</label><br/>
+                            <label><input name="phienBan" type="radio" value="ebook"/> E-book</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Extras</legend>
+                            <label><input name="extra" type="checkbox" value="giftwrap"/> Gift wrap</label><br/>
+                            <label><input name="extra" type="checkbox" value="bookmark"/> Free bookmark</label>
+                        </fieldset>
+                        <p><label for="note">Notes</label><br/><textarea cols="40" id="note" maxlength="300" name="ghiChu" placeholder="Optional note" rows="4"></textarea></p>
+                    </fieldset>
+                    <p><label><input name="dongY" required type="checkbox" value="yes"/> I understand this is only a practice form and creates no real order *</label></p>
+                    <p><button type="submit">Send demo request</button> <button type="reset">Reset</button></p>
+                </form>
+            </section>
+            <section>
+                <h2>Quick pick list</h2>
+                <p>Links from the catalog land here (fragment #SKU):</p>
+                <ul>
+                    <li id="SH01">SH01 - The Mountain is You - 69$</li>
+                    <li id="SH02">SH02 - The Let Them Theory - 89$</li>
+                    <li id="SH03">SH03 - The Subtle Art of Not Giving A Pick - 70$</li>
+                    <li id="SH04">SH04 - Atomic Habits - 75$</li>
+                    <li id="SH05">SH05 - The Four Agreements - 48$</li>
+                    <li id="CB01">CB01 - Dont Laugh Challenge - 30$</li>
+                    <li id="CB02">CB02 - Ten Apples Up On Top - 25$</li>
+                    <li id="CB03">CB03 - The Fantastic Flatulent Fart Brothers Save The World! - 35$</li>
+                    <li id="HF01">HF01 - A Brief History of Humankind - 95$</li>
+                    <li id="HF02">HF02 - The Wager - 72$</li>
+                    <li id="HF03">HF03 - 1776 - 65$</li>
+                    <li id="HF04">HF04 - The Shadow of War - 68$</li>
+                    <li id="RN01">RN01 - It Ends With Us - 58$</li>
+                    <li id="RN02">RN02 - Then She Was Gone - 55$</li>
+                    <li id="RN03">RN03 - Every Summer After - 50$</li>
+                    <li id="RN04">RN04 - One Day in December - 52$</li>
+                    <li id="RN05">RN05 - The Love of My Life - 58$</li>
+                    <li id="RN06">RN06 - The French Illusion - 62$</li>
+                    <li id="SF01">SF01 - Stranded - 68$</li>
+                    <li id="SF02">SF02 - Children of Time - 88$</li>
+                    <li id="SF03">SF03 - Hail Mary - 80$</li>
+                </ul>
+                <p><a href="index.html">Back to Home</a></p>
+            </section>
+        </main>
+        <footer>
+            <table bgcolor="#A8205F" border="0" cellpadding="16" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center">
+                        <font color="#FFFFFF"><b>NOMCHAN BOOKSTORE</b> &middot; 21 demo books &middot; &copy; 2026 Nomchan Bookstore.</font><br/>
+                        <font color="#FFE0A3">All data, prices and orders are for learning/demo purposes only.</font><br/>
+                        <a href="index.html"><font color="#FFFFFF">Back to Home</font></a>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </body>
+</html>
